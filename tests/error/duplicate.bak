@@ -1,0 +1,2 @@
+num x = 10;
+str x = "hello";      // Error: x already declared

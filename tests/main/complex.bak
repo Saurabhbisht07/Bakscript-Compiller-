@@ -1,0 +1,13 @@
+num total = 0;
+num count = 0;
+
+repeat (num j = 1; j < 3; j = j + 1) {
+    num temp = 2 * j;
+    total = total + temp;
+    count = count + 1;
+}
+
+show("Final count:");
+show(count);
+show("Final total:");
+show(total); 

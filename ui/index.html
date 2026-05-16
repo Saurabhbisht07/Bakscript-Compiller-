@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BakScript UI</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header>
+    <h1>BakScript Playground</h1>
+    <div class="toolbar">
+      <select id="sampleSelect"></select>
+      <button id="loadSampleBtn">Load Sample</button>
+      <button id="runBtn">Run</button>
+      <button id="visualizeBtn">Visualize pipeline</button>
+      <button id="clearBtn">Clear Output</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="panel editor-panel">
+      <h2>Editor</h2>
+      <textarea id="codeEditor" spellcheck="false"></textarea>
+    </section>
+
+    <section class="panel output-panel">
+      <h2>Output</h2>
+      <pre id="output"></pre>
+    </section>
+
+    <section class="panel viz-panel output-panel">
+      <h2>Pipeline <span class="viz-subtitle">lexer · parser · interpreter</span></h2>
+      <p class="viz-story-intro">
+        End-to-end pipeline: lexing, parsing, semantic analysis (symbol table), intermediate code (TAC), interpretation, and optional trace. Use <strong>Visualize pipeline</strong> to fetch all stages from the driver.
+      </p>
+      <div id="visualizer" class="visualizer-root" role="region" aria-label="Compiler pipeline output"></div>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

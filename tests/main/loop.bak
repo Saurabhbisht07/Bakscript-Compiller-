@@ -1,0 +1,15 @@
+num sum = 0;
+repeat (num i = 0; i < 10;i=i+1) {
+    num half = (i / 2) * 2;
+    num diff = i - half;
+
+    when (diff < 1) {
+        show(i);
+        show(" is even");
+    }
+    otherwise {
+        show(i);
+        show(" is odd");
+    }
+} 
+show("Loop Working Fine !");

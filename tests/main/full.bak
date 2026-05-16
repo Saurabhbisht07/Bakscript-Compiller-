@@ -1,0 +1,9 @@
+str name = "Jatin";
+num i =10;
+show(i);
+str name1 = "MEOW";
+show(name1);
+str name2 = "Jatin";
+
+show(name);
+show(name2);

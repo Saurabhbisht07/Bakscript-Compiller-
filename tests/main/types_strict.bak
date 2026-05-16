@@ -1,0 +1,21 @@
+// Demonstrates extended type system features under --strict-types.
+
+bool flag = true;
+num counter = 0;
+
+when (flag) {
+    counter = counter + 1;
+}
+
+array nums = [1, 2, 3];
+nums[0] = 42;
+show(nums);
+
+auto inferred_num = 10;
+auto inferred_bool = false;
+auto inferred_array = [5, 6, 7];
+
+show(inferred_num);
+show(inferred_bool);
+show(inferred_array);
+

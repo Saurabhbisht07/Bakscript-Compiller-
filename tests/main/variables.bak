@@ -1,0 +1,14 @@
+num x = 10;
+num y = 20;
+num total = x + y;
+
+str name = "BakScript";
+show("Project: " + name);
+show("Total: " + total);
+
+// reassignment
+x = x + 5;
+show("x after reassignment: " + x);
+
+show(true);
+show(false);

@@ -1,0 +1,7 @@
+num x = 20;
+num y = 10;
+when(y/0 > x){
+    show("Something !");
+}otherwise{
+    show("Something Else !");
+}

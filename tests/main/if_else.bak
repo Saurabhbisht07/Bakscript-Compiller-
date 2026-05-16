@@ -1,0 +1,7 @@
+num score = 100;
+when (score > 90) {
+    show("Excellent!");
+    show("Hola Amigo !");
+} otherwise {
+    show("Keep trying!");
+} 

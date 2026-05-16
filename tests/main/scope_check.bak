@@ -1,0 +1,14 @@
+str name = "John";  
+num x = 70;
+num y = 20;
+when (x < y) {
+    str age = "25";
+    show(name);
+    show(age);
+}
+otherwise{
+    num x = 20;
+    show(x);
+    show("Not john");
+}
+show("Young Lad!");

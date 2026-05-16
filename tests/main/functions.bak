@@ -1,0 +1,13 @@
+function add(a, b) {
+    return a + b;
+}
+
+function greet(name) {
+    return "Hello, " + name;
+}
+
+num result = add(4, 6);
+show("add result = " + result);
+
+str msg = greet("BakScript");
+show(msg);

@@ -1,0 +1,13 @@
+num i = 0;
+while (i < 3) {
+    show("while i = " + i);
+    i = i + 1;
+}
+
+repeat (num j = 0; j < 3; j = j + 1) {
+    when (j == 1) {
+        show("repeat: middle");
+    } otherwise {
+        show("repeat j = " + j);
+    }
+}

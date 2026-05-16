@@ -1,0 +1,11 @@
+num nums = [10, 20, 30];
+show(nums);
+show(nums[0]);
+show(nums[2]);
+
+nums[1] = 99;
+show(nums);
+show(nums[1]);
+
+str mixed = ["hello", true, 42];
+show(mixed);

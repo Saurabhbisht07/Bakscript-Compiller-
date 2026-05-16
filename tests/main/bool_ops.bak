@@ -1,0 +1,17 @@
+show(true);
+show(false);
+
+show(true && false);
+show(true || false);
+show(!false);
+
+show(1 == 1);
+show(1 != 2);
+show(1 < 2);
+show(2 > 1);
+show(1 <= 1);
+show(2 >= 2);
+
+show("Hello, " + "world!");
+show("x=" + 5);
+show("flag=" + true);

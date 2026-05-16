@@ -1,0 +1,1 @@
+show(undefined_var);  // Using a variable that hasn't been declared 

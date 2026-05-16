@@ -1,0 +1,4 @@
+str name = "John";
+str age = "25";
+num result = name + age;  // Error: can't add strings
+str concat = 42 + 13;     // Error: assigning number operation to string

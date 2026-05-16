@@ -1,0 +1,7 @@
+str name = ask("What is your name? ");
+show("Hello, ");
+show(name);
+str age = ask("How old are you? ");
+show("You are ");
+show(age);
+show(" years old."); 
