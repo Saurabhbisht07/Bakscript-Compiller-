@@ -6,6 +6,10 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
 from typing import Optional
 
+# ── Cloud / Render compatibility ────────────────────────────────────────────
+# Render injects PORT as an env var; fall back to 8080 for local dev.
+# HOST must be 0.0.0.0 on cloud so the reverse-proxy can reach the process.
+
 
 ROOT = Path(__file__).resolve().parent
 PROJECT_ROOT = ROOT.parent
@@ -20,8 +24,8 @@ def _find_bakscript(project_root: Path) -> Optional[Path]:
 
 
 BAKSCRIPT_EXE = _find_bakscript(PROJECT_ROOT)
-HOST = "127.0.0.1"
-PORT = 8080
+HOST = "0.0.0.0"
+PORT = int(os.environ.get("PORT", 8080))
 
 
 class BakScriptUIHandler(BaseHTTPRequestHandler):

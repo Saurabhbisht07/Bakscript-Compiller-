@@ -1,5 +1,17 @@
-x86_64.obj
-runtime.obj
-x86_64.exe
+# Build artifacts
+*.exe
+*.obj
+*.o
+*.asm
 x86_64.asm
-bakscript.exe
+
+# Linux binary (compiled by Render, not stored in repo)
+bakscript
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Temp files
+*.tmp

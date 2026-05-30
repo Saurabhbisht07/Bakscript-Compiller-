@@ -1,0 +1,2 @@
+# BakScript Web UI — Python dependencies
+# The server uses only the standard library; no third-party packages needed.

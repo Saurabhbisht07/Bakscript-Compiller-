@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: bakscript
+    runtime: python
+    buildCommand: |
+      apt-get install -y gcc &&
+      gcc -o bakscript src/*.c -I include
+    startCommand: python ui/server.py
+    envVars:
+      - key: PORT
+        value: 10000
